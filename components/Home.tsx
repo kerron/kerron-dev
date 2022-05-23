@@ -2,22 +2,30 @@ import React from "react";
 
 const Home: React.FC = () => {
   return (
-    <div className="max-w-md mx-auto bg-white rounded-md shadow-md overflow-hidden md:max-w-2xl mt-4 p-4">
+    <div className="max-w-md mx-auto bg-white rounded-md shadow-md overflow-hidden md:max-w-2xl my-12 p-4">
       <div className="flex items-center justify-between mb-1">
         <h1 className="text-3xl font-bold">kerron parchment</h1>
-        <div>
-          <span>Github:</span>
+        <div className="flex flex-col">
+          <div className="text-sm mb-2">
+            <span>Github:</span>
+            <a
+              className="font-semibold text-blue-800"
+              href="https://github.com/kerron"
+            >
+              @<span className="underline">kerron</span>
+            </a>
+          </div>
           <a
-            className="ml-1 font-semibold hover:text-blue-800"
-            href="https://github.com/kerron"
+            className="text-sm text-blue-800"
+            href="mailto:kerronparchment@gmail.com"
           >
-            @<span className="underline">kerron</span>
+            kerronparchment@gmail.com
           </a>
         </div>
       </div>
       <hr />
-      <div>
-        <div className="flex justify-between mt-6">
+      <div className="my-6">
+        <div className="flex justify-between">
           <div className="flex flex-col">
             <span className="font-semibold">esure</span>
             <span className="italic text-xs">Senior Frontend Developer</span>
@@ -59,9 +67,68 @@ const Home: React.FC = () => {
             explore new and existing solutions
           </li>
           <li>
-            <span className="font-semibold">Tech</span>: Typescript, React,
-            Material UI, mobx-state-tree, React Testing Library, Nestjs,
-            storybooks, JSS, AWS
+            <span className="font-semibold">Tech</span>:{" "}
+            <span className="text-slate-500 italic">
+              Typescript, React, Material UI, mobx-state-tree, React Testing
+              Library, Nestjs, storybooks, JSS, AWS
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+      <div>
+        <div className="flex justify-between my-6">
+          <div className="flex flex-col">
+            <span className="font-semibold">personal projects</span>
+          </div>
+        </div>
+        <ul className="mt-4 marker:text-sky-900 list-disc pl-5 space-y-3 text-sm">
+          <li>
+            <a
+              className="font-semibold text-blue-800"
+              href="https://play.google.com/store/apps/details?id=com.neko2"
+            >
+              Neko
+            </a>{" "}
+            <span className="text-slate-500">[React Native]</span>: I actively
+            develop and maintain a location-based application which allows users
+            to meet and openly chat with others based on their interests.
+          </li>
+          <li>
+            <a
+              className="font-semibold text-blue-800"
+              href="https://github.com/kerron/tspp"
+            >
+              tspp
+            </a>{" "}
+            <span className="text-slate-500">[typescript]</span>: rewriting the
+            algorithms in the C++ standard library using TypeScript.
+          </li>
+          <li>
+            <a
+              className="font-semibold text-blue-800"
+              href="https://github.com/kerron/ts-hs"
+            >
+              ts-hs
+            </a>{" "}
+            <span className="text-slate-500">[typescript]</span>: Lazy evaluated
+            functions written in TypeScript and inspired by Haskell.
+          </li>
+          <li>
+            <a
+              className="font-semibold text-blue-800"
+              href="https://medium.com/@riggedjs"
+            >
+              Medium
+            </a>
+            <span className="text-slate-500"> [@riggedjs]</span>: I write
+            JavaScript related articles under the pseudonym @riggedjs
+          </li>
+          <li>
+            <a className="font-semibold">Github Visualisation</a>{" "}
+            <span className="text-slate-500">[Reactjs]</span>: easy way of
+            consuming Github stats for a specific repository. Available by demo.
           </li>
         </ul>
       </div>
