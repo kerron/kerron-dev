@@ -1,6 +1,7 @@
 import { Provider } from "mobx-react";
 import { useStore } from "../store";
 import { initializeApp } from "firebase/app";
+import "../styles/globals.css";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDI_CACykWqDWe9l9CSIL1QG7fpa4SNVv0",
