@@ -10,7 +10,7 @@ const Home: React.FC = () => {
             <span>Github:</span>
             <a
               className="font-semibold text-blue-800"
-              href="https://github.com/kerron"
+              href="https://github.com/kerron?tab=repositories"
             >
               @<span className="underline">kerron</span>
             </a>
