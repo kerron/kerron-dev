@@ -78,11 +78,6 @@ const Home: React.FC = () => {
 
       <hr />
       <div>
-        <div className="flex justify-between my-6">
-          <div className="flex flex-col">
-            <span className="font-semibold">personal projects</span>
-          </div>
-        </div>
         <ul className="mt-4 marker:text-sky-900 list-disc pl-5 space-y-3 text-sm">
           <li>
             <a
